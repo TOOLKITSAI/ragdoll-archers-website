@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Important pages
-Sitemap: https://ragdoll-archers-website.pages.dev/sitemap.xml
+Sitemap: https://ragdollarchers.app/sitemap.xml
 
 # Crawl optimization
 Crawl-delay: 1

@@ -1,5 +1,12 @@
 # Ragdoll Archers Website - Cloudflare Pages Redirects
 
+# Domain redirects - www to root domain (IMPORTANT: must be first)
+https://www.ragdollarchers.app/* https://ragdollarchers.app/:splat 301!
+http://www.ragdollarchers.app/* https://ragdollarchers.app/:splat 301!
+
+# Force HTTPS on root domain
+http://ragdollarchers.app/* https://ragdollarchers.app/:splat 301!
+
 # Game shortcuts
 /game /index.html#game 301
 /play /index.html#game 301

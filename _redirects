@@ -17,5 +17,15 @@ http://ragdollarchers.app/* https://ragdollarchers.app/:splat 301!
 /weapons /arrows 301
 /help /tips 301
 
+# Old Google-indexed pages - redirect to homepage for SEO preservation
+/strategy/* / 301
+/strategy/ / 301
+/archer-ragdoll-masters/* / 301
+/archer-ragdoll-masters / 301
+/archery-games/* / 301
+/archery-games / 301
+/hello-world/* / 301
+/hello-world / 301
+
 # 404 handling
 /* /404.html 404

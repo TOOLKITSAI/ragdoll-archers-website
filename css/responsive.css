@@ -1,0 +1,752 @@
+/* Ragdoll Archers Website - Responsive CSS */
+
+/* Mobile First Approach */
+/* Base styles are for mobile (320px+) */
+
+/* Tablet Styles (768px+) */
+@media (max-width: 1023px) {
+  /* Header */
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: var(--header-bg);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
+    transition: left 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-menu li {
+    margin: 5px 0;
+  }
+  
+  .nav-menu a {
+    font-size: 1rem;
+    padding: 12px 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 60px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .hero-features {
+    gap: 15px;
+  }
+  
+  /* Game Section */
+  .game-wrapper iframe {
+    height: 450px;
+  }
+  
+  .game-container h2 {
+    font-size: 2rem;
+  }
+  
+  /* Features */
+  .features h2,
+  .how-to-play h2,
+  .game-info h2 {
+    font-size: 2rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    padding: 25px;
+  }
+  
+  /* Steps Grid */
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* Info Grid */
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .info-card {
+    padding: 20px;
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  /* New Sections - Tablet */
+  .upgrades-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .arrows-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .platforms-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Mobile Styles (0px - 767px) */
+@media (max-width: 767px) {
+  /* Base adjustments */
+  .container {
+    padding: 0 15px;
+  }
+  
+  /* Header */
+  .nav-container {
+    padding: 0 15px;
+    height: 60px;
+  }
+  
+  .logo {
+    font-size: 1rem;
+  }
+  
+  .logo img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .nav-menu {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+  
+  /* Main content adjustment */
+  main {
+    margin-top: 60px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 40px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .cta-button {
+    padding: 14px 28px;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  
+  .hero-features {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Game Section */
+  .game-section {
+    padding: 40px 0;
+  }
+  
+  .game-container {
+    padding: 0 15px;
+  }
+  
+  .game-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .game-wrapper {
+    padding: 15px;
+  }
+  
+  .game-wrapper iframe {
+    height: 350px;
+  }
+  
+  /* Sections */
+  .features,
+  .how-to-play,
+  .game-info,
+  .game-introduction,
+  .game-modes,
+  .faq-section,
+  .testimonials,
+  .cta-section {
+    padding: 40px 0;
+  }
+  
+  .features h2,
+  .how-to-play h2,
+  .game-info h2,
+  .game-introduction h2,
+  .game-modes h2,
+  .faq-section h2,
+  .testimonials h2,
+  .cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  /* New Sections Mobile Styles */
+  .introduction-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .introduction-highlights {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .highlight-item {
+    flex: 1;
+    min-width: 140px;
+  }
+  
+  .modes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .mode-card {
+    padding: 25px;
+  }
+  
+  .modes-cta {
+    padding: 25px;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  
+  .faq-question {
+    padding: 20px;
+  }
+  
+  .faq-question h3 {
+    font-size: 1rem;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .testimonial-card {
+    padding: 25px;
+  }
+  
+  .testimonials-stats {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  
+  .stat-item {
+    padding: 15px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-features {
+    gap: 15px;
+  }
+  
+  .cta-feature {
+    padding: 12px 20px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cta-btn {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    width: 280px;
+    text-align: center;
+  }
+  
+  /* Feature Cards */
+  .feature-card {
+    padding: 20px;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* Steps */
+  .step {
+    padding: 25px 15px;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .step h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* Info Grid */
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .info-card {
+    padding: 15px;
+  }
+  
+  .info-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  /* Game Description */
+  .game-description {
+    padding: 20px;
+    font-size: 1rem;
+  }
+  
+  /* Tips Preview */
+  .tips-preview {
+    padding: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 30px 0 15px;
+  }
+  
+  .footer-content {
+    gap: 25px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  /* New Sections - Mobile */
+  .upgrade-system,
+  .arrow-types-preview,
+  .platform-availability,
+  .technical-specs {
+    padding: 40px 0;
+  }
+  
+  .upgrade-system h2,
+  .arrow-types-preview h2,
+  .platform-availability h2,
+  .technical-specs h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .section-intro {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .upgrades-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .upgrade-card {
+    padding: 25px;
+  }
+  
+  .upgrade-icon {
+    font-size: 2.5rem;
+  }
+  
+  .upgrade-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .arrows-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .arrow-preview {
+    padding: 20px;
+  }
+  
+  .arrow-icon {
+    font-size: 2rem;
+  }
+  
+  .arrow-preview h3 {
+    font-size: 1.1rem;
+  }
+  
+  .platforms-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .platform-card {
+    padding: 25px;
+  }
+  
+  .platform-icon {
+    font-size: 2.5rem;
+  }
+  
+  .platform-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .tech-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .tech-card {
+    padding: 20px;
+  }
+  
+  .tech-label {
+    font-size: 1rem;
+  }
+  
+  .tech-value {
+    font-size: 0.95rem;
+  }
+  
+  .upgrade-play-btn,
+  .arrows-guide-btn,
+  .platform-play-btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+  
+  .hero-rating {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .rating-badge {
+    font-size: 1rem;
+    padding: 6px 16px;
+  }
+  
+  .rating-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Mobile (0px - 374px) */
+@media (max-width: 374px) {
+  /* Hero */
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  
+  /* Game */
+  .game-wrapper iframe {
+    height: 280px;
+  }
+  
+  .game-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Section headings */
+  .features h2,
+  .how-to-play h2,
+  .game-info h2,
+  .game-introduction h2,
+  .game-modes h2,
+  .faq-section h2,
+  .testimonials h2,
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Extra Small Mobile - New Sections */
+  .highlight-item {
+    flex-direction: column;
+    padding: 12px 16px;
+    text-align: center;
+  }
+  
+  .mode-icon {
+    font-size: 2.5rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  
+  .cta-features {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testimonials-stats {
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  /* Feature cards */
+  .feature-card {
+    padding: 15px;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  /* Steps */
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+  
+  .step h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop Large (1200px+) */
+@media (min-width: 1200px) {
+  /* Enhanced spacing for large screens */
+  .hero {
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .game-wrapper iframe {
+    height: 700px;
+  }
+  
+  .features,
+  .how-to-play,
+  .game-info,
+  .game-introduction,
+  .game-modes,
+  .faq-section,
+  .testimonials,
+  .cta-section {
+    padding: 80px 0;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .info-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Large Desktop - New Sections */
+  .modes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .cta-section h2 {
+    font-size: 3.5rem;
+  }
+  
+  .cta-features {
+    gap: 60px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  * {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .header,
+  .footer,
+  .hamburger,
+  .cta-button {
+    display: none !important;
+  }
+  
+  main {
+    margin-top: 0;
+  }
+  
+  .game-wrapper {
+    display: none;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --border-color: #ffffff;
+    --card-bg: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Hover support detection */
+@media (hover: hover) {
+  .feature-card:hover,
+  .cta-button:hover,
+  .nav-menu a:hover {
+    /* Hover effects only on devices that support hover */
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Touch-friendly adjustments */
+  .nav-menu a,
+  .cta-button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    cursor: default;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Ragdoll Archers - Physics Archery Game",
+  "short_name": "Ragdoll Archers",
+  "description": "Master physics-based archery with realistic ragdoll mechanics. Play free online!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#e94560",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/ragdoll-archers-logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "lang": "en",
+  "dir": "ltr"
+}

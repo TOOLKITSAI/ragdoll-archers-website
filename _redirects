@@ -1,0 +1,21 @@
+# Ragdoll Archers Website - Cloudflare Pages Redirects
+
+# Game shortcuts
+/game /index.html#game 301
+/play /index.html#game 301
+
+# SEO-friendly redirects
+/strategy /guide.html 301
+/walkthrough /guide.html 301
+/weapons /arrows.html 301
+/help /tips.html 301
+
+# Trailing slash handling
+/guide /guide.html 301
+/arrows /arrows.html 301
+/tips /tips.html 301
+/review /review.html 301
+/about /about.html 301
+
+# 404 handling
+/* /404.html 404

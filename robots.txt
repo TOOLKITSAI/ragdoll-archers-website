@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Sitemap: https://ragdoll-archers-website.pages.dev/sitemap.xml
+
+# Crawl optimization
+Crawl-delay: 1
